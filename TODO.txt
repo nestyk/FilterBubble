@@ -1,0 +1,7 @@
+Rewrite classe user
+
+- User
+-> crea un'istanza di User e va a prendere le statistiche in users.json, se non c'è avviene la registrazione
+-> Metodi:
+    - getUser(username, password)
+    - User prende le informazioni dell'utente
