@@ -1,4 +1,4 @@
-Developed by Nesticò Giuseppe https://www.github.com/nestyk, all rights reserved
+Developed by nestyk https://www.github.com/nestyk, all rights reserved
 
 | File               | Explain       |
 |--------------------|---------------|
