@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from Paths import Paths
+from FilterBubble.Paths import Paths
 import json
 
 
@@ -27,11 +27,17 @@ class Posts:
             self.updateFile()
 
     def getPostsByTopic(self, topic):
-        postsByTopic = []
+        postsIdByTopic = []
         for key, value in self.posts.items():
             if value["topic"] == topic:
-                postsByTopic.append(key)
-        return postsByTopic
+                postsIdByTopic.append(key)
+        return postsIdByTopic
+    def showPosts(self, user):
+        postsIdByTopic = self.getPostsByTopic(user.mostInterestingTopic)
+        print("Showing Posts")
+        for ID in postsIdByTopic:
+            print("[ - ] Post ID: " + str(ID))
+            print("[ - ] Content: " + self.posts[ID]["content"])
 
 
 
